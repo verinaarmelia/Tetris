@@ -23,20 +23,20 @@ Renaldy Gunivon <br>
 Verina Armelia <br>
 Febi Mettasari <br>
 
-# 4 April 2019
+# UPDATE 4 April 2019
 
 + Verina :<br>Code UI<br>
 + Febi :<br>Code Game<br>
 + Renaldy :<br>Class Diagram<br>
 
-# 10 April 2019
+# UPDATE 10 April 2019
 
 + Verina :<br>Code UI<br>
 + Febi :<br>Code Game<br>
 + Renaldy :<br>Design Logo<br>
 
 
-# 22 April 2019
+# UPDATE 22 April 2019
 
 + Verina :<br>Debug UI<br>
 + Febi :<br>Code+Debug Game<br>

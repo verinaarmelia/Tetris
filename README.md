@@ -1,7 +1,8 @@
 # Game Legendaris Klasik Susun Balok Lucu Warna-Warni Hanya Menyerupai tapi Bukan TETRIS 2019
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/49263055/55535094-4f9f1700-56e0-11e9-9587-aca27c0e3c64.png">
+  <img src="https://user-images.githubusercontent.com/49263055/56504083-9f376c80-6541-11e9-8c7a-bfcb402fbe29.png">
 </p>
+
 
 # Class Diagram
 <p align="center">
@@ -24,6 +25,19 @@ Febi Mettasari <br>
 
 # 4 April 2019
 
-+ Verina :<br>Code<br>
-+ Febi :<br>Code<br>
++ Verina :<br>Code UI<br>
++ Febi :<br>Code Game<br>
++ Renaldy :<br>Class Diagram<br>
+
+# 10 April 2019
+
++ Verina :<br>Code UI<br>
++ Febi :<br>Code Game<br>
++ Renaldy :<br>Design Logo<br>
+
+
+# 22 April 2019
+
++ Verina :<br>Debug UI<br>
++ Febi :<br>Code+Debug Game<br>
 + Renaldy :<br>Class Diagram<br>

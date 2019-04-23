@@ -6,9 +6,8 @@
 
 # Class Diagram
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/49263055/55539107-166ba480-56ea-11e9-8bf8-f7ac00ee32b0.png">
+  <img src="https://user-images.githubusercontent.com/49263055/56551069-941c2500-65b1-11e9-8562-ce4c2524514b.png">
 </p>
-
 
 
 # Deskripsi Tema

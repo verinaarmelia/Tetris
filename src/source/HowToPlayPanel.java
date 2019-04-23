@@ -419,7 +419,7 @@ public class HowToPlayPanel extends JPanel {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				HowToPlayFrame.window.dispose();
+				HowToPlayFrame.window.remove(HowToPlayPanel.this);
 				new MainMenuFrame();
 
 			}

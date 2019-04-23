@@ -6,9 +6,15 @@ import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
@@ -17,6 +23,7 @@ public class MainMenuPanel extends JPanel {
 	JLabel play, exit, howToPlay;
 	BufferedImage cube;
 	BufferedImage img;
+	Clip clip;
 	private String highscore = "0";
 	private int currHighscore = 0;
 	private int newHighscore = 0;
@@ -85,7 +92,7 @@ public class MainMenuPanel extends JPanel {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				MainMenuFrame.window.dispose();
+				MainMenuFrame.window.remove(MainMenuPanel.this);
 				new WindowFrame();
 			}
 		});
@@ -123,7 +130,7 @@ public class MainMenuPanel extends JPanel {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				MainMenuFrame.window.dispose();
+				MainMenuFrame.window.remove(MainMenuPanel.this);
 				new HowToPlayFrame();
 			}
 		});
@@ -165,6 +172,15 @@ public class MainMenuPanel extends JPanel {
 		});
 		add(exit);
 
+		// masukkin sound
+		try {
+			clip = AudioSystem.getClip();
+			AudioInputStream stream = AudioSystem.getAudioInputStream(new File("Sprites/TonariNoTotoro.wav"));
+			clip.open(stream);
+			clip.start();
+		} catch (LineUnavailableException | UnsupportedAudioFileException | IOException e1) {
+			e1.printStackTrace();
+		}
 	}
 
 	public void setHighscore(int score) {

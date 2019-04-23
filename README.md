@@ -17,10 +17,10 @@ Cara mainnya seperti Tetris pada umumnya dengan tambahan fitur lines  sent count
 # Personil
 
 + Ketua : <br>
-Renaldy Gunivon <br>
+Renaldy Gunivon (2201827654)<br>
 + Anggota : <br>
-Verina Armelia <br>
-Febi Mettasari <br>
+Verina Armelia (2201827710)<br>
+Febi Mettasari (2201827881)<br>
 
 # UPDATE 4 April 2019
 
@@ -43,6 +43,6 @@ Febi Mettasari <br>
 
 # UPDATE 23 April 2019
 
-+ Verina :<br>Debug UI<br>
++ Verina :<br>Final Class Diagram<br>
 + Febi :<br>Debug Game<br>
 + Renaldy :<br>Final Class Diagram<br>

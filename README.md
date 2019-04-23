@@ -4,7 +4,6 @@
 </p>
 
 
-# Class Diagram
 <p align="center">
   <img src="https://user-images.githubusercontent.com/49263055/56551069-941c2500-65b1-11e9-8562-ce4c2524514b.png">
 </p>
@@ -12,8 +11,8 @@ link : https://www.draw.io/#G1QsSfCmxAexDNGNqP0Ny-PtPaecmed9MR
 
 
 # Deskripsi Tema
-Game ini berukuran 10 x 20 seperti ukuran map Tetris pada umumnya. Terdapat fitur hold, rotate dan speed down.
-Cara mainnya seperti Tetris pada umunya dimana nanti akan ada mode timer serta akan ada high score.
+Game ini berukuran 10 x 20 seperti ukuran map Tetris pada umumnya. Terdapat fitur hold, rotate dan speed down, dan change brick.
+Cara mainnya seperti Tetris pada umumnya dengan tambahan fitur lines  sent counter.
 
 # Personil
 
@@ -41,3 +40,9 @@ Febi Mettasari <br>
 + Verina :<br>Debug UI<br>
 + Febi :<br>Code+Debug Game<br>
 + Renaldy :<br>Class Diagram<br>
+
+# UPDATE 23 April 2019
+
++ Verina :<br>Debug UI<br>
++ Febi :<br>Debug Game<br>
++ Renaldy :<br>Final Class Diagram<br>

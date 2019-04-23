@@ -54,10 +54,6 @@ public class Board extends JPanel implements KeyListener {
 	private float b = (float) 0.9569;
 
 	public Board() {
-		// setLayout(null);
-		// JLabel gameTitle = new JLabel("TETRIS 2019");
-		// add(gameTitle);
-		// gameTitle.setSize(getMaximumSize());
 		setBackground(Color.getHSBColor(h, s, b));
 		try {
 			bg = ImageIO.read(Board.class.getResource("/totoro.png"));
@@ -196,26 +192,15 @@ public class Board extends JPanel implements KeyListener {
 		do {
 			nextIDX = Helper.randomNum(0, 6);
 		} while (nextIDX == curIDX);
-		// System.out.println("rand " + idx);
-		// if (!shiftPieceAvail) {
+
 		nextPiece = new NextPiece(piece[nextIDX].getBlock(), piece[nextIDX].getCoords(), this,
 				piece[nextIDX].getColor());
-		System.out.println("2. " + holdIDX + " " + curIDX + "\n");
-		// }
-		// System.out.println("cur: " + (currentPiece.getColor() - 1) + " next: " +
-		// (nextPiece.getColor() - 1));
 
 	}
 
 	public void getPiece() {
-		// System.out.println("nextpiece: " + nextPiece.getColor());
-		// int idx = Helper.randomNum(0, 6); //coba
-		// int idx = 0;
-		// nextPiece = new Piece(piece[idx].getBlock(), piece[idx].getCoords(), this,
-		// piece[idx].getColor()); // coba
 		if (shiftPressed && !shifted) {
 			shifted = true;
-			System.out.println(shifted);
 			curIDX = currentPiece.getColor() - 1;
 			if (curIDX == holdIDX)
 				currentPiece.setcY(indentY + 4 * BLOCKSIZE - currentPiece.getCoords().length * BLOCKSIZE);
@@ -224,14 +209,11 @@ public class Board extends JPanel implements KeyListener {
 				holdIDX = curIDX;
 				holdPiece = new HoldPiece(piece[holdIDX].getBlock(), piece[holdIDX].getCoords(), this,
 						piece[holdIDX].getColor());
-				System.out.println("hold" + (holdPiece.getColor() - 1));
-				System.out.println("STat:" + shiftPieceAvail);
+
 				if (shiftPieceAvail) {
-					System.out.println("1. " + holdIDX + " " + curIDX);
 					curIDX = temp;
 					currentPiece = new CurrentPiece(piece[curIDX].getBlock(), piece[curIDX].getCoords(), this,
 							piece[curIDX].getColor());
-					// System.out.println("shifted to " + (currentPiece.getColor() - 1));
 					holdIDX = holdPiece.getColor() - 1;
 				} else if (!shiftPieceAvail) {
 					curIDX = nextPiece.getColor() - 1;
@@ -239,7 +221,6 @@ public class Board extends JPanel implements KeyListener {
 							piece[nextIDX].getColor());
 
 					getNextPiece();
-					// System.out.println("error if shiftPressed"); // TODO: fix bug
 				}
 				holdPiece.render(getGraphics());
 			}
@@ -250,7 +231,6 @@ public class Board extends JPanel implements KeyListener {
 			currentPiece = new CurrentPiece(piece[nextIDX].getBlock(), piece[nextIDX].getCoords(), this,
 					piece[nextIDX].getColor());
 			getNextPiece();
-			// System.out.println("error else");
 		}
 
 		for (int i = 0; i < GRIDWIDTH; i++)
@@ -288,7 +268,9 @@ public class Board extends JPanel implements KeyListener {
 		}
 		if (e.getKeyCode() == KeyEvent.VK_SPACE) {
 			if (gameOver) {
+				MainMenuPanel.clip.stop();
 				new MainMenuFrame();
+
 			} else
 				currentPiece.placeDown();
 		}
@@ -351,7 +333,7 @@ public class Board extends JPanel implements KeyListener {
 	public void setScore(int score) {
 		this.score += score;
 		scoreString = "" + this.score;
-		System.out.println(scoreString);
+		// System.out.println(scoreString);
 	}
 
 }

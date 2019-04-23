@@ -1,6 +1,6 @@
 # Game Legendaris Klasik Susun Balok Lucu Warna-Warni Hanya Menyerupai tapi Bukan TETRIS 2019
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/49263055/56504083-9f376c80-6541-11e9-8c7a-bfcb402fbe29.png">
+  <img src="https://user-images.githubusercontent.com/49263055/56552414-65a04900-65b5-11e9-859a-e58381ca0464.png">
 </p>
 
 
@@ -21,6 +21,7 @@ Renaldy Gunivon (2201827654)<br>
 + Anggota : <br>
 Verina Armelia (2201827710)<br>
 Febi Mettasari (2201827881)<br>
+
 
 # UPDATE 4 April 2019
 
@@ -46,3 +47,17 @@ Febi Mettasari (2201827881)<br>
 + Verina :<br>Final Class Diagram<br>
 + Febi :<br>Debug Game<br>
 + Renaldy :<br>Final Class Diagram<br>
+# UI
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/49263055/56552910-ed3a8780-65b6-11e9-9f9d-d0a45b5298d8.jpg">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/49263055/56552911-ed3a8780-65b6-11e9-8efb-21458238730c.jpg">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/49263055/56552912-ed3a8780-65b6-11e9-835e-d6945cca4abe.jpg">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/49263055/56552913-edd31e00-65b6-11e9-9562-7821b4e24feb.jpg">
+</p>
+

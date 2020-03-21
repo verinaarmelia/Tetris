@@ -10,13 +10,17 @@ import javax.imageio.ImageIO;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 
-public class GlassPane extends JComponent {
-
+class BufferedImage() {
 	private BufferedImage border;
 	private BufferedImage nexts;
 	private BufferedImage hold;
 	private JLabel next;
 	private Board board;
+}
+
+public class GlassPane extends JComponent {
+
+BufferedImage();
 
 	public GlassPane() {
 
@@ -36,6 +40,11 @@ public class GlassPane extends JComponent {
 			e.printStackTrace();
 		}
 	}
+	void drawImage() {
+		g.drawImage(border.getScaledInstance(border.getWidth(), border.getHeight(), Image.SCALE_SMOOTH), 0, 117, null);
+		g.drawImage(hold.getScaledInstance(hold.getWidth(), hold.getHeight(), Image.SCALE_SMOOTH), 540, 175, null);
+		g.drawImage(nexts.getScaledInstance(nexts.getWidth(), nexts.getHeight(), Image.SCALE_SMOOTH), 350, 70, null);
+	}
 
 	@Override
 	protected void paintComponent(Graphics g) {
@@ -43,9 +52,7 @@ public class GlassPane extends JComponent {
 
 		g.setColor(Color.getHSBColor((float) 0.53358333, (float) 0.5697, (float) 0.9569));
 		g.fillRect(25, 50, 250, 100);
-		g.drawImage(border.getScaledInstance(border.getWidth(), border.getHeight(), Image.SCALE_SMOOTH), 0, 117, null);
-		g.drawImage(hold.getScaledInstance(hold.getWidth(), hold.getHeight(), Image.SCALE_SMOOTH), 540, 175, null);
-		g.drawImage(nexts.getScaledInstance(nexts.getWidth(), nexts.getHeight(), Image.SCALE_SMOOTH), 350, 70, null);
+		drawImage();
 
 	}
 
